@@ -10,7 +10,7 @@ export default props => (
         </Grid>
 
         <Grid cols="12 3 2">
-            <IconButton></IconButton>
+            <IconButton onClick={props.handleAdd}></IconButton>
         </Grid>
     </div>
 ) 

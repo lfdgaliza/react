@@ -2,18 +2,14 @@ import React from 'react'
 import If from '../template/If';
 
 export default props => {
-    if (props.hide) {
-        return null
-    }
-    else {
-        return (
-            <If test="{!props.hide}">
-                <button className={`btn btn-${props.style || "primary"}`}>
-                    <i className={`fa fa-${props.icon || "plus"}`} onClick={props.onClick}></i>
-                </button>
-            </If>
-        )
-    }
+
+    return (
+        <If test="{!props.hide}">
+            <button className={`btn btn-${props.style || "primary"}`} onClick={props.onClick}>
+                <i className={`fa fa-${props.icon || "plus"}`}></i>
+            </button>
+        </If>
+    )
 
 
 }
